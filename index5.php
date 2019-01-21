@@ -1,0 +1,34 @@
+<?php
+   $arr = [1,2,3,4,5];
+   $sum = array_sum($arr);
+   $len = count($arr);
+   echo $sum/$len;
+   $arr1 = range(1,100);
+   echo "<br>".array_sum($arr1)."<br>";
+   echo implode("<br>", $arr1);
+   $arr2 = array_fill(0, 10, "x");
+   var_dump($arr2);
+   $arr3 = range(1,10);
+   shuffle($arr3);
+   echo "<br>";
+   var_dump($arr3);
+   $x = 8;
+   $arr4 = range(1,$x);
+   echo (array_product($arr4))."<br>";
+   $str = "2345";
+   $arr5 = str_split($str,1);
+   echo array_sum($arr5)."<br>";
+   $str = "safgqwqwqwq";
+   echo strrev(ucfirst(strrev($str)))."<br>";
+   $arr6 = [5,3,2,5,2,3,9];
+   $arr6 = array_map("sqrt", $arr6);
+   var_dump($arr6);
+   echo "<br>";
+   $arr7 = range(1,26);
+   $arr8 = range("a","z");
+   $arr9 = array_combine($arr8, $arr7);
+   var_dump($arr9);
+   $str1 = "1234567890";
+   $arr10 = str_split($str1,2);
+   echo array_sum($arr10);
+?>
